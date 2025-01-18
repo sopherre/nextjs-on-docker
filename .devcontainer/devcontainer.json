@@ -6,7 +6,6 @@
   "service": "app",
   "workspaceFolder": "/app",
   "remoteUser": "root", // rootユーザーを指定（SSHキーは/root/.sshにあるため）
-  "postCreateCommand": "chmod 600 /root/.ssh/id_rsa && git config --global core.sshCommand 'ssh -i /root/.ssh/id_rsa'", // SSHキーの権限設定とgitのSSH設定
   "customizations": {
     "vscode": {
       "settings": {},
