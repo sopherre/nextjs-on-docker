@@ -1,8 +1,7 @@
 const Home = () => {
   return (
     <div>
-      <h1>Welcome to Next.js with Docker!</h1>
-      <p>TypeScript + Next.js + Docker</p>
+      <h1>Welcome to Next.js on Docker</h1>
     </div>
   );
 };
