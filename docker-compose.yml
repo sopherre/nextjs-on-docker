@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   app:
     build:
@@ -8,6 +6,7 @@ services:
     volumes:
       - .:/app:cached
       - /app/node_modules
+      - ~/.ssh:/root/.ssh:ro  # ホストの~/.sshディレクトリをコンテナの/root/.sshに読み取り専用でマウント
     ports:
       - "3000:3000"
     stdin_open: true
