@@ -1,22 +1,21 @@
-# ベースイメージとしてNode.jsを使用
 FROM node:18-alpine
 
-# Gitをインストール
-RUN apk add --no-cache git
+# SSHクライアントをインストール
+RUN apk add --no-cache git openssh
 
 # 作業ディレクトリを設定
 WORKDIR /app
 
-# package.jsonとpackage-lock.jsonをコピー
+# 必要なファイルをコピー
 COPY package*.json ./
 
-# 必要なパッケージをインストール
+# 依存関係をインストール
 RUN npm install
 
-# プロジェクトファイルをコピー
+# アプリケーションコードをコピー
 COPY . .
 
-# 開発用のポートを公開
+# 開発用ポートを公開
 EXPOSE 3000
 
 # 開発モードでNext.jsを実行

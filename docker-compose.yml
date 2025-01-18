@@ -4,9 +4,9 @@ services:
   app:
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: Dockerfile
     volumes:
-      - .:/app
+      - .:/app:cached
       - /app/node_modules
     ports:
       - "3000:3000"
