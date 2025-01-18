@@ -1,4 +1,4 @@
-# nextjs-on-docker
+# NextJS on Docker
 
 ## 前提条件
 
