@@ -5,8 +5,9 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/app:cached
-      - /app/node_modules
-      - ~/.ssh:/root/.ssh:ro  # ホストの~/.sshディレクトリをコンテナの/root/.sshに読み取り専用でマウント
+      - /app/node_modules # node_modulesをコンテナ内にマウント
+      - /app/.next # .nextをコンテナ内にマウント
+      - ~/.ssh:/root/.ssh:ro # ホストの~/.sshディレクトリをコンテナの/root/.sshに読み取り専用でマウント
     ports:
       - "3000:3000"
     stdin_open: true
