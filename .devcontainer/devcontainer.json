@@ -1,0 +1,10 @@
+{
+  "name": "Next.js Dev Container",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "remoteUser": "node", // コンテナ内のユーザー
+  "mounts": [
+    "source=${localEnv:HOME}/.gitconfig,target=/home/node/.gitconfig,type=bind,consistency=cached" // ホストのGit設定を使用
+  ]
+}
