@@ -1,5 +1,3 @@
-以下は適切に記述し直した Markdown 形式の README です：
-
 # nextjs-on-docker
 
 ## 前提条件
