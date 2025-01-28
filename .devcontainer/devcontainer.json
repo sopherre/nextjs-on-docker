@@ -15,7 +15,9 @@
         //  Prettier
         "esbenp.prettier-vscode",
         //  ESLint
-        "dbaeumer.vscode-eslint"
+        "dbaeumer.vscode-eslint",
+        //  Docker
+        "ms-azuretools.vscode-docker"
       ]
     }
   }
