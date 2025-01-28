@@ -1,4 +1,6 @@
-const Home = () => {
+"use server";
+
+const Page = () => {
   return (
     <div>
       <h1>Welcome to Next.js on Docker</h1>
@@ -6,4 +8,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Page;
