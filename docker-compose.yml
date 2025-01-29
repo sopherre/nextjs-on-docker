@@ -3,6 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      target: builder
     volumes:
       - .:/app:cached
       - /app/node_modules # node_modulesをコンテナ内にマウント
